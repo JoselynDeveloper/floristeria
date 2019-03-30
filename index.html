@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Floristeria</title>
+	
+	
+	<!-- jquery -->
+	<script type="text/javascript" src="js/Jquery/jquery-3.3.1.min.js"></script>
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<!-- Script slider -->
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="">
+
+	<!-- Momments js Hora -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+
+	<!-- Main Js -->
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="selector-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+	</div>
+
+	<section id="global">
+
+		<!-- Cabecera -->
+		<header id="">
+			<div id="logo">
+				<h1>
+					FLORISTERIA
+				</h1>			
+			</div>
+
+			<div id="reloj">
+				
+			</div>
+
+			<div class="clearflix"></div>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Sobre mi</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>			
+		</header>
+
+		<!-- Slider -->
+		<div class="bxslider">
+			<div><img src="img/hojas.jpg" title="Hojas verde"></div>
+			<div><img src="img/rojo.jpg" title="Hojas rojas"></div>
+			<div><img src="img/cielo.jpg" title="Cielo hermoso"></div>
+		</div>
+
+		<!-- Contenido -->
+		<section id="content">
+			<div id="posts">
+				<!-- Cargar post desde un json -->
+
+			</div>
+			<aside id="sidebar">
+				<div id="about">
+					<h4><span>Quien soy?</span></h4>
+					<img src="img/caracol.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				</div>
+				<div id="login">
+					<h4><span>Identificate</span></h4>
+					<form>
+						<label for="name">
+							Nombre
+						</label>
+						<input type="text" name="name" id="form_name">
+
+						<label for="email">
+							E-mail
+						</label>
+						<input type="email" name="email" id="form_email">
+
+						<label for="password">
+							Contraseña
+						</label>
+						<input type="password" name="password" id="form_password">
+
+						<input type="submit" value="Entrar" >
+					</form>
+				</div>
+
+			</aside>
+
+			<div class="clearflix"></div>
+		</section>
+	</section>
+
+	<!-- Pie de pagina -->
+	<footer id="footer">
+		<strong>
+			Proyecto desarrollado por Joselyn Abreu &copy; 2019
+			<a class="subir" href="#">Subir arriba</a>
+		</strong>		
+		
+	</footer>
+</body>
+</html>

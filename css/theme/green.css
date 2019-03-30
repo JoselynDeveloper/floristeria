@@ -1,0 +1,46 @@
+body{
+	background: url('../../img/hojas.jpg');
+	background-attachment: fixed;
+}
+
+#logo{
+	background: #235E3D;
+	transition: all 2000ms;
+}
+
+#menu ul li:hover{
+	background: #235E3D;
+}
+
+.button-more{
+	background: #235E3D;
+	transition: all 2000ms;
+}
+
+form input[type="submit"]:hover{
+	background: #235E3D;
+}
+
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active, 
+a.ui-button:active, 
+.ui-button:active, 
+.ui-button.ui-state-active:hover{
+	background: #235E3D !important;
+	border: 1px solid #235E3D !important;
+	color: #fff !important;
+	transition: all 2000ms;
+}
+
+#reloj{
+	display: block;
+	float: right;
+	font-family: Helvetica, Arial;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 63px;
+	color: #235E3D;
+	transition: all 2000ms;
+}
+

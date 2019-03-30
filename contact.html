@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Floristeria</title>
+	
+	<!-- jquery -->
+	<script type="text/javascript" src="js/Jquery/jquery-3.3.1.min.js"></script>
+
+	<!-- Jquery-ui style css -->
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+	<!-- Jquery-ui -->
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Momments js Hora -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Style css cambiador de theme -->
+	<link id="theme" rel="stylesheet" type="text/css" href="">
+	
+	<!--  Plugin Validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+	<!-- Validator css -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
+	rel="stylesheet" type="text/css" />
+
+	<!-- Main Js -->
+	<script type="text/javascript" src="js/contact/contact.js"></script>
+</head>
+<body>
+	<div id="selector-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+	</div>
+
+	<section id="global">
+
+		<!-- Cabecera -->
+		<header id="">
+			<div id="logo">
+				<h1>
+					Floristeria
+				</h1>			
+			</div>
+			
+			<div id="reloj">
+				
+			</div>
+
+			<div class="clearflix"></div>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Sobre mi</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>			
+		</header>
+
+		<!-- Contenido -->
+		<section id="content">
+
+			<div id="contact">
+				<h2>Contacto</h2>
+				<!-- Cargar form contacto -->
+
+				<form id="registration-form" method="post">
+					<p>
+						<label for="name">Nombre</label>
+						<input type="text" name="name" id="name">
+					</p>
+					<p>
+						<label for="surname">Apellidos</label>
+						<input type="text" id="surname" name="surname" data-validation="alphanumeric" >
+					</p>
+					
+					<p>
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" data-validation="email">
+					</p>
+					
+					<p>
+						<label for="sex">Sexo</label>
+						<input type="radio" id="hombre" name="sex" value="men" data-validation="alphanumeric"> Hombre					
+						<input type="radio" id="mujer" name="sex" value="woman" data-validation="alphanumeric"> Mujer
+					</p>
+					
+					<p>
+						<label for="date">Fecha de nacimiento</label>
+						<input type="text" name="date" data-validation="date" data-validation-format="dd/mm/yyyy" >
+					</p>
+					
+					<p>
+						<label for="years">Edad</label>
+						<input type="number" name="years" data-validation="number" data-validation-allowing="range[1;100]">
+					</p>
+
+					<p>
+						<input type="submit" value="Enviar">
+					</p>
+					
+				</form>
+				
+			</div>
+
+		</div>
+		<aside id="sidebar">
+			<div id="about">
+				<h4><span>Quien soy?</span></h4>
+				<img src="img/caracol.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			</div>
+			<div id="login">
+				<h4><span>Identificate</span></h4>
+				<form>
+					<label for="name">
+						Nombre
+					</label>
+					<input type="text" name="name" id="form_name">
+
+					<label for="email">
+						E-mail
+					</label>
+					<input type="email" name="email" id="form_email">
+
+					<label for="password">
+						Contraseña
+					</label>
+					<input type="password" name="password" id="form_password">
+
+					<input type="submit" value="Entrar" >
+				</form>
+			</div>
+
+		</aside>
+
+		<div class="clearflix"></div>
+	</section>
+</section>
+
+<!-- Pie de pagina -->
+<footer id="footer">
+	<strong>
+		Proyecto desarrollado por Joselyn Abreu &copy; 2019
+	</strong>		
+
+</footer>
+</body>
+</html>
